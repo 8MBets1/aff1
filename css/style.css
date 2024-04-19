@@ -93,7 +93,7 @@ input[type="checkbox"]{
     padding: 0 40px 0 50px;
   }
 }
-@media (max-width: 920px) {
+@media (max-width: 1045px) {
   nav .menu-btn i{
     display: block;
   }
