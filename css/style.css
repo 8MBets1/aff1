@@ -271,7 +271,7 @@ text-decoration: none;
 
 /* ------------------------------- Contact us----------------------------  */
 .contact-us{
-  margin: 50px;
+  margin: 50px 0 50px 0;
 }
 .contact-head{
   display: flex;
