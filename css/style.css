@@ -200,6 +200,15 @@ input[type="checkbox"]{
  height: 45px;
 } 
 
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25%, 75% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+}
+
+.shaking {
+  animation: shake .3s ease-in-out forwards;
+}
 
 /*=================================================
  footer area 
