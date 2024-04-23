@@ -284,7 +284,7 @@ text-decoration: none;
 #hdn img{
   width: 150px;
  }
-/* ------------------------------- Contact us----------------------------  */
+/* ################################################ Contact us #################################################  */
 .contact-us{
   margin: 50px 0 50px 0;
 }
@@ -330,6 +330,7 @@ text-decoration: none;
   justify-content: space-around;
 }
 .contact-child{
+  width: 420px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -346,6 +347,12 @@ text-decoration: none;
   text-decoration: none;
   font-size: 4rem;
   background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.contact-child a img{
+  width: 100px;
+  background-size: 100% 100%;
 }
 .contact-child i{
   background-color: transparent;
