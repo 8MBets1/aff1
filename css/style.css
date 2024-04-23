@@ -32,6 +32,9 @@ nav ul {
 nav ul li{
   margin: 0 5px;
 }
+/* nav>ul>li:last-child:hover{
+ background-color: rgb(93, 199, 61);
+} */
 nav ul li a{
   color: #f2f2f2;
   text-decoration: none;
@@ -68,7 +71,6 @@ nav ul li .flag img {
   background-color: #f8d77c;
   /* background-color: transparent; */
   color: black;
-  font-weight: 700;
 }
 
 .ccolor2{
@@ -94,7 +96,7 @@ input[type="checkbox"]{
     padding: 0 40px 0 50px;
   }
 }
-@media (max-width: 1045px) {
+@media (max-width: 1314px) {
   nav .menu-btn i{
     display: block;
   }
@@ -200,16 +202,17 @@ input[type="checkbox"]{
  height: 45px;
 } 
 
+
+
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
-  25%, 75% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
+  25%, 75% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
 }
 
 .shaking {
-  animation: shake .3s ease-in-out forwards;
+  animation: shake .7s ease-in-out forwards;
 }
-
 /*=================================================
  footer area 
 =================================================*/
@@ -358,7 +361,7 @@ text-decoration: none;
 
 
 
-/* ########################    community ########################################## */
+/* ######################################    community ########################################## */
 
 .cmn-main{
   display: flex;
@@ -442,4 +445,57 @@ text-decoration: none;
   font-weight: 900;
   color: black;
   background-color: rgb(226, 226, 226);
+}
+
+
+/* ###################################  affiliate campaign ########################################## */
+
+.card-main a{
+  width: 100%;
+  display: flex;
+  /* background-color: green; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.card-child{
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+  /* background-color: red; */
+  object-fit: cover;
+  color: white;
+  margin: 15px;
+}
+@media screen and (min-device-width: 100px) and (max-device-width: 1275px) { 
+  .card-child{
+    width: 90%;
+  }
+}
+
+.card-image{
+ border: 5px solid goldenrod;
+ border-radius: 10px;
+}
+
+.card-image img{
+  width: 100%;
+  background-size: 100% 100%;
+}
+.card-text{
+  margin-top: 10px;
+  /* background-color: #111; */
+  /* border: 5px solid goldenrod; */
+  border-radius: 10px;
+}
+.card-text h2{
+  margin-top: 15px;
+  text-align: center;
+}
+.card-text p{
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 50px;
 }
