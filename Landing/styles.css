@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://atlanticbehavioralhealth.com/wp-content/uploads/2024/04/roulette-table-gambling-addicction.webp') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(2px) brightness(0.5);
+  z-index: -1;
+}
+
+
+.header {
+  background: url('https://won8kina.com/media/7b9d4022bfb76029dcd92.png') no-repeat center;
+  background-size: contain;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 50px;
+  animation: softPulse 2s ease-in-out infinite;
+}
+
+/* Keyframes for pulsing */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+.partners {
+  display: flex;
+  gap: 60px;
+}
+
+.partner {
+  text-align: center;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  cursor: pointer;
+}
+
+.partner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.partner button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: linear-gradient(270deg, rgb(255, 186, 58), rgb(1, 224, 5), orange, rgb(246, 91, 14));
+  background-size: 600% 600%;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: gradientMove 4s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.partner button:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
